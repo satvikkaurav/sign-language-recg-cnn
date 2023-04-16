@@ -99,7 +99,7 @@ validation_ds = image_dataset_from_directory(
     batch_size=32,
     image_size=(310, 310))
 
-classifier.fit(train_ds,epochs=50,validation_data=validation_ds)
+classifier.fit(train_ds,epochs=15,validation_data=validation_ds)
 
 # Saving the model
 model_json = classifier.to_json()

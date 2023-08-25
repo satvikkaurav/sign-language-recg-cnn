@@ -56,11 +56,6 @@ class Application:
         self.panel4 = tk.Label(self.root) # Word
         self.panel4.place(x = 220,y=700)
 
-
-        # self.btcall = tk.Button(self.root,command = self.action_call,height = 0,width = 0)
-        # self.btcall.config(text = "About",font = ("Courier",14))
-        # self.btcall.place(x = 825, y = 0)
-
         self.str=""
         self.word=""
         self.current_symbol="Empty"
@@ -177,71 +172,5 @@ class Application:
         self.vs.release()
         cv2.destroyAllWindows()
     
- 
-        
-
-    # def action_call(self) :
-        
-    #     self.root1 = tk.Toplevel(self.root)
-    #     self.root1.title("About")
-    #     self.root1.protocol('WM_DELETE_WINDOW', self.destructor1)
-    #     self.root1.geometry("900x900")
-        
-    #     img = cv2.imread("Pictures/sir.jpg", 1)
-    #     # img = cv2.resize(img, (300, 300))
-    #     cv2.imwrite("Pictures/sir.png", img)
-    #     return 
-        
-    #     self.tx = tk.Label(self.root1)
-    #     self.tx.place(x = 330,y = 20)
-    #     self.tx.config(text = "Efforts By", fg="red", font = ("Courier",30,"bold"))
-
-    #     self.photo1 = tk.PhotoImage(file='Pictures/ravi.png')
-    #     self.w1 = tk.Label(self.root1, image = self.photo1)
-    #     self.w1.place(x = 20, y = 105)
-    #     self.tx6 = tk.Label(self.root1)
-    #     self.tx6.place(x = 20,y = 250)
-    #     self.tx6.config(text = "RC\nIIT2016141", font = ("Courier",15,"bold"))
-
-    #     self.photo2 = tk.PhotoImage(file='Pictures/nitin.png')
-    #     self.w2 = tk.Label(self.root1, image = self.photo2)
-    #     self.w2.place(x = 200, y = 105)
-    #     self.tx2 = tk.Label(self.root1)
-    #     self.tx2.place(x = 200,y = 250)
-    #     self.tx2.config(text = "Nitin\nIIT2016132", font = ("Courier",15,"bold"))
-
-        
-    #     self.photo3 = tk.PhotoImage(file='Pictures/luv.png')
-    #     self.w3 = tk.Label(self.root1, image = self.photo3)
-    #     self.w3.place(x = 380, y = 105)
-    #     self.tx3 = tk.Label(self.root1)
-    #     self.tx3.place(x = 380,y = 250)
-    #     self.tx3.config(text = "Luv\nIIT2016085", font = ("Courier",15,"bold"))
-
-    #     self.photo4 = tk.PhotoImage(file='Pictures/sheldon.png')
-    #     self.w4 = tk.Label(self.root1, image = self.photo4)
-    #     self.w4.place(x = 560, y = 105)
-    #     self.tx4 = tk.Label(self.root1)
-    #     self.tx4.place(x = 560,y = 250)
-    #     self.tx4.config(text = "Sheldon\nIIT2016137", font = ("Courier",15,"bold"))
-        
-    #     self.photo5 = tk.PhotoImage(file='Pictures/sid.png')
-    #     self.w5 = tk.Label(self.root1, image = self.photo5)
-    #     self.w5.place(x = 740, y = 105)
-    #     self.tx5 = tk.Label(self.root1)
-    #     self.tx5.place(x = 740,y = 250)
-    #     self.tx5.config(text = "Siddhant\nIIT2016069", font = ("Courier",15,"bold"))
-        
-    #     self.tx7 = tk.Label(self.root1)
-    #     self.tx7.place(x = 170,y = 360)
-    #     self.tx7.config(text = "Under the supervision of", fg="red", font = ("Courier",30,"bold"))
-
-    #     self.photo6 = tk.PhotoImage(file='Pictures/sir.png')
-    #     self.w6 = tk.Label(self.root1, image = self.photo6)
-    #     self.w6.place(x = 350, y = 420)
-    #     self.tx6 = tk.Label(self.root1)
-    #     self.tx6.place(x = 230,y = 670)
-    #     self.tx6.config(text = "Dr. Vrijendra Singh", font = ("Courier",30,"bold"))
-
 print("Starting Application...")
 (Application().root.mainloop())
